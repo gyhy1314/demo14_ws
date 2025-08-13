@@ -1,0 +1,2 @@
+urdf01_rviz
+-DCATKIN_DEVEL_PREFIX=/home/gyhy/roswork/demo14_ws/devel -DCMAKE_INSTALL_PREFIX=/home/gyhy/roswork/demo14_ws/install -G Unix Makefiles

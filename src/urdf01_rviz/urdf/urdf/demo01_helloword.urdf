@@ -1,0 +1,42 @@
+<!-- name:指定机器人模型的名称 -->
+<robot name="demo01_helloword">
+    <!-- name：为连杆命名-->
+    <link name="base_link">
+    <!-- visual：描述外观（对应的数据是可视的）
+            geometry 设置两岸的形状
+
+                标签一： box（盒状）
+                    属性：size = 长（x）宽（y）高（z）
+
+                标签二： cylinder（圆柱状）
+                    属性：radius = 半径，height = 高度
+
+                标签三：sphere（球状）
+                    属性：radius = 半径
+                    
+                标签四：mesh（为连杆添加皮肤）
+                    属性：filename = 皮肤文件路径（格式：package://<package_name>/<path_to_file>/文件）
+                    
+            origin 设置偏移量与倾斜弧度
+
+                属性1：xyz = x偏移 y偏移 z偏移
+                
+                属性2：rpy = x翻滚 y翻滚 z翻滚（单位：弧度）
+                
+            metrial 设置材料属性（颜色）
+                
+                属性：name
+                
+                标签：color
+                    属性：rgba = 红绿蓝权重值与透明度（每个权重值以及透明度取值{0, 1})
+                    
+        collision 连杆的碰撞属性
+        
+        Inertial 连杆的惯性矩阵-->
+        <visual>
+            <geometry>
+                <box size="0.5 0.2 0.1"/>
+            </geometry>
+        </visual>
+    </link>
+</robot>

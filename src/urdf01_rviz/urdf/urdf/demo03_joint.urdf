@@ -1,0 +1,32 @@
+<!-- 需求:设计机器人底盘,并添加摄像头 -->
+
+<robot name="demo03_joint">
+
+    <!-- 1.底盘link -->
+    <link name="base_link">
+    
+        <visual>
+
+            <geometry>
+
+                <box size="0.3 0.2 0.1"/>
+
+            </geometry>
+
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+
+            <material name="car_color"/>
+
+                <color rgba="0.8 0.5 0 0.5"/>
+
+            </material>
+
+        </visual>
+    
+
+    <!-- 2.摄像头link -->
+
+    <!-- 3.关节 -->
+
+
+</robot>
