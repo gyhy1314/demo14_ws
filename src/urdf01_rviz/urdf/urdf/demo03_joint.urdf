@@ -38,7 +38,7 @@
             </geometry>
 
             <!-- 先使用默认（后期需要修改） -->
-            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <origin xyz="0 0 0.025" rpy="0 0 0"/>
 
             <material name="camera_color">
 
