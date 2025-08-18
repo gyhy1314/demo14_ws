@@ -144,5 +144,78 @@
     </joint>
 
     <!-- 4.添加万向轮 -->
+    <!-- 
+        形状：球
+        半径：0.0075m
+     -->
+    <!-- 4.1 link -->
+    <link name="front_wheel">
+
+        <visual>
+
+            <geometry>
+
+                <sphere radius="0.0075"/>
+
+            </geometry>
+
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+
+            <material name="wheel_color">
+
+                <color rgba="0 0 0 1"/>
+
+            </material>
+
+        </visual>
+
+    </link>
+
+    <link name="back_wheel">
+
+        <visual>
+
+            <geometry>
+
+                <sphere radius="0.0075"/>
+
+            </geometry>
+
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+
+            <material name="wheel_color">
+
+                <color rgba="0 0 0 1"/>
+
+            </material>
+
+        </visual>
+
+    </link>
+
+    <!-- 4.2 joint -->
+    <joint name="front2link" type="continuous">
+
+        <parent link="base_link"/>
+
+        <child link="front_wheel"/>
+
+        <origin xyz="0.08 0 -0.0075" rpy="0 0 0"/>
+
+        <axis xyz="0 1 0"/>
+
+    </joint>
+
+    <joint name="back2link" type="continuous">
+
+        <parent link="base_link"/>
+
+        <child link="back_wheel"/>
+
+        <origin xyz="-0.08 0 -0.0075" rpy="0 0 0"/>
+
+        <axis xyz="0 1 0"/>
+    
+    </joint>
 
 </robot>
